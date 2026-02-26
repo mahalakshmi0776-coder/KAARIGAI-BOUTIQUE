@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saree Collections | KAARIGAI</title>
+  <!--stylesheets-->
+  <link rel="stylesheet" href="../css/loader.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/product.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/toast.css" />
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!--preloader-->
+  <div id="preloader">
+    <div class="loader-content">
+      <h1 class="loader-logo">KAARIGAI</h1>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+  <!--navbar-->
+  <nav>
+    <div class="nav-container">
+      <div class="navlogo">
+        <h1><a href="../index.html" class="logo">KAARIGAI</a></h1>
+      </div>
+      <div class="navitem" id="navMenu">
+        <ul class="navlinks">
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#collections">Collections</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="../subpages/orders.html">Orders</a></li>
+        </ul>
+      </div>
+      <div class="navlinksicon">
+        <a href="#" id="loginBtn"><i class="fa-solid fa-circle-user"></i></a>
+        <a href="../subpages/whishlist.html"><i class="fa-solid fa-heart"></i></a>
+        <div class="cart-icon-wrapper" id="cartToggle">
+          <a href="../subpages/cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <span id="cart-count">0</span>
+        </div>
+        <i class="fas fa-bars bar-icon" id="menuBtn"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section class="product-display">
+    <h2 class="section-title">Saree Collections</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/saree/saree1.webp" alt="Saree 1" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'S01',
+                  'Kanchipuram Silk',
+                  5400,
+                  '../images/saree/saree1.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">10% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Kanchipuram Silk</h3>
+          <p class="product-desc">Traditional hand-woven pure silk saree.</p>
+          <div class="price-container">
+            <span class="current-price">₹5,400</span>
+            <span class="original-price">₹6,000</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'S01',
+                    'Kanchipuram Silk',
+                    5400,
+                    '../images/saree/saree1.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'S01',
+                    'Kanchipuram Silk',
+                    5400,
+                    '../images/saree/saree1.webp',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/saree/saree2.webp" alt="Saree 2" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'S02',
+                  'Banarasi Georgette',
+                  3800,
+                  '../images/saree/saree2.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">5% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Banarasi Georgette</h3>
+          <p class="product-desc">
+            Elegant Banarasi weave with light weight fabric.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹3,800</span>
+            <span class="original-price">₹4,000</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'S02',
+                    'Banarasi Georgette',
+                    3800,
+                    '../images/saree/saree2.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'S02',
+                    'Banarasi Georgette',
+                    3800,
+                    '../images/saree/saree2.webp',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/saree/saree3.webp" alt="Saree 3" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'S03',
+                  'Cotton Mulmul',
+                  1020,
+                  '../images/saree/saree3.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">15% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Cotton Mulmul</h3>
+          <p class="product-desc">
+            Daily wear soft cotton with floral prints.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹1,020</span>
+            <span class="original-price">₹1,200</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'S03',
+                    'Cotton Mulmul',
+                    1020,
+                    '../images/saree/saree3.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'S03',
+                    'Cotton Mulmul',
+                    1020,
+                    '../images/saree/saree3.webp',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/saree/saree4.webp" alt="Saree 4" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'S04',
+                  'Chiffon Party Wear',
+                  2300,
+                  '../images/saree/saree4.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">8% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Chiffon Party Wear</h3>
+          <p class="product-desc">Sparkly chiffon for evening events.</p>
+          <div class="price-container">
+            <span class="current-price">₹2,300</span>
+            <span class="original-price">₹2,500</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'S04',
+                    'Chiffon Party Wear',
+                    2300,
+                    '../images/saree/saree4.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'S04',
+                    'Chiffon Party Wear',
+                    2300,
+                    '../images/saree/saree4.webp',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/saree/saree5.webp" alt="Saree 5" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'S05',
+                  'Organza Floral',
+                  2550,
+                  '../images/saree/saree5.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">12% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Organza Floral</h3>
+          <p class="product-desc">Trendy organza with digital prints.</p>
+          <div class="price-container">
+            <span class="current-price">₹2,550</span>
+            <span class="original-price">₹2,900</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'S05',
+                    'Organza Floral',
+                    2550,
+                    '../images/saree/saree5.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'S05',
+                    'Organza Floral',
+                    2550,
+                    '../images/saree/saree5.webp',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/saree/saree6.webp" alt="Saree 6" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'S06',
+                  'Premium Organza',
+                  2550,
+                  '../images/saree/saree6.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">12% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Premium Organza</h3>
+          <p class="product-desc">
+            Exquisite digital prints on high-quality fabric.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹2,550</span>
+            <span class="original-price">₹2,900</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'S06',
+                    'Premium Organza',
+                    2550,
+                    '../images/saree/saree6.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'S06',
+                    'Premium Organza',
+                    2550,
+                    '../images/saree/saree6.webp',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/saree/saree7.webp" alt="Saree 7" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'S07',
+                  'Mysore Silk',
+                  5795,
+                  '../images/saree/saree7.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">5% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Mysore Silk</h3>
+          <p class="product-desc">Rich gold border with smooth finish.</p>
+          <div class="price-container">
+            <span class="current-price">₹5,795</span>
+            <span class="original-price">₹6,100</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'S07',
+                    'Mysore Silk',
+                    5795,
+                    '../images/saree/saree7.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'S07',
+                    'Mysore Silk',
+                    5795,
+                    '../images/saree/saree7.webp',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/saree/saree8.webp" alt="Saree 8" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'S08',
+                  'Linen Saree',
+                  1620,
+                  '../images/saree/saree8.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">10% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Linen Saree</h3>
+          <p class="product-desc">Breathable linen for summer comfort.</p>
+          <div class="price-container">
+            <span class="current-price">₹1,620</span>
+            <span class="original-price">₹1,800</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'S08',
+                    'Linen Saree',
+                    1620,
+                    '../images/saree/saree8.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'S08',
+                    'Linen Saree',
+                    1620,
+                    '../images/saree/saree8.webp',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/saree/saree9.webp" alt="Saree 9" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'S09',
+                  'Gadwal Silk',
+                  4080,
+                  '../images/saree/saree9.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">15% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Gadwal Silk</h3>
+          <p class="product-desc">Contrast border traditional weave.</p>
+          <div class="price-container">
+            <span class="current-price">₹4,080</span>
+            <span class="original-price">₹4,800</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'S09',
+                    'Gadwal Silk',
+                    4080,
+                    '../images/saree/saree9.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'S09',
+                    'Gadwal Silk',
+                    4080,
+                    '../images/saree/saree9.webp',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/saree/saree10.webp" alt="Saree 10" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'S10',
+                  'Net Saree',
+                  2560,
+                  '../images/saree/saree10.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">20% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Net Saree</h3>
+          <p class="product-desc">Designer net with embroidery work.</p>
+          <div class="price-container">
+            <span class="current-price">₹2,560</span>
+            <span class="original-price">₹3,200</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'S10',
+                    'Net Saree',
+                    2560,
+                    '../images/saree/saree10.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'S10',
+                    'Net Saree',
+                    2560,
+                    '../images/saree/saree10.webp',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer-section">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h2>KAARIGAI</h2>
+        <p>&copy; 2026 Crafted with Love by Artisans.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="../js/loader.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/whishlist.js"></script>
+  <script src="../js/buynow.js"></script>
+</body>
+
+</html>

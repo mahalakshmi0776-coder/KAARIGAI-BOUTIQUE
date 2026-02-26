@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traditional Wear | KAARIGAI</title>
+  <!--stylesheets-->
+  <link rel="stylesheet" href="../css/loader.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/product.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/toast.css" />
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!--preloader-->
+  <div id="preloader">
+    <div class="loader-content">
+      <h1 class="loader-logo">KAARIGAI</h1>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+  <!--navbar-->
+  <nav>
+    <div class="nav-container">
+      <div class="navlogo">
+        <h1><a href="../index.html" class="logo">KAARIGAI</a></h1>
+      </div>
+      <div class="navitem" id="navMenu">
+        <ul class="navlinks">
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#collections">Collections</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="../subpages/orders.html">Orders</a></li>
+        </ul>
+      </div>
+      <div class="navlinksicon">
+        <a href="#" id="loginBtn"><i class="fa-solid fa-circle-user"></i></a>
+        <a href="../subpages/whishlist.html"><i class="fa-solid fa-heart"></i></a>
+        <div class="cart-icon-wrapper" id="cartToggle">
+          <a href="../subpages/cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <span id="cart-count">0</span>
+        </div>
+        <i class="fas fa-bars bar-icon" id="menuBtn"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section class="product-display">
+    <h2 class="section-title">Traditional Collection</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/traditionalwear/tradition1.jpg" alt="Product 1" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'T01',
+                  'Silk Pattu Pavadai',
+                  2250,
+                  '../images/traditionalwear/tradition1.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">10% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Silk Pattu Pavadai</h3>
+          <p class="product-desc">
+            Pure Kanchipuram silk pavadai set for teens.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹2,250</span>
+            <span class="original-price">₹2,500</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'T01',
+                    'Silk Pattu Pavadai',
+                    2250,
+                    '../images/traditionalwear/tradition1.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'T01',
+                    'Silk Pattu Pavadai',
+                    2250,
+                    '../images/traditionalwear/tradition1.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/traditionalwear/tradition2.jpg" alt="Product 2" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'T02',
+                  'Traditional Half Saree',
+                  3400,
+                  '../images/traditionalwear/tradition2.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">15% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Traditional Half Saree</h3>
+          <p class="product-desc">
+            Elegant Dhavani set with rich brocade border.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹3,400</span>
+            <span class="original-price">₹4,000</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'T02',
+                    'Traditional Half Saree',
+                    3400,
+                    '../images/traditionalwear/tradition2.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'T02',
+                    'Traditional Half Saree',
+                    3400,
+                    '../images/traditionalwear/tradition2.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/traditionalwear/tradition3.jpg" alt="Product 3" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'T03',
+                  'Kerala Kasavu Set',
+                  1710,
+                  '../images/traditionalwear/tradition3.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">5% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Kerala Kasavu Set</h3>
+          <p class="product-desc">
+            White & Gold traditional Kerala style pavadai set.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹1,710</span>
+            <span class="original-price">₹1,800</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'T03',
+                    'Kerala Kasavu Set',
+                    1710,
+                    '../images/traditionalwear/tradition3.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'T03',
+                    'Kerala Kasavu Set',
+                    1710,
+                    '../images/traditionalwear/tradition3.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/traditionalwear/tradition4.png" alt="Product 4" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'T04',
+                  'Brocade Lehenga',
+                  4800,
+                  '../images/traditionalwear/tradition4.png',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">20% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Brocade Lehenga</h3>
+          <p class="product-desc">
+            Banarasi brocade lehenga for temple festivals.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹4,800</span>
+            <span class="original-price">₹6,000</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'T04',
+                    'Brocade Lehenga',
+                    4800,
+                    '../images/traditionalwear/tradition4.png',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'T04',
+                    'Brocade Lehenga',
+                    4800,
+                    '../images/traditionalwear/tradition4.png',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/traditionalwear/tradition5.jpg" alt="Product 5" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'T05',
+                  'Velvet Ethnic Gown',
+                  2999,
+                  '../images/traditionalwear/tradition5.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">15% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Velvet Ethnic Gown</h3>
+          <p class="product-desc">
+            Rich velvet traditional gown for evening events.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹2,999</span>
+            <span class="original-price">₹3,499</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'T05',
+                    'Velvet Ethnic Gown',
+                    2999,
+                    '../images/traditionalwear/tradition5.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'T05',
+                    'Velvet Ethnic Gown',
+                    2999,
+                    '../images/traditionalwear/tradition5.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/traditionalwear/tradition6.webp" alt="Product 6" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'T06',
+                  'Temple Border Saree',
+                  1400,
+                  '../images/traditionalwear/tradition6.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">12% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Temple Border Saree</h3>
+          <p class="product-desc">
+            Pure cotton saree with traditional temple border.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹1,400</span>
+            <span class="original-price">₹1,600</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'T06',
+                    'Temple Border Saree',
+                    1400,
+                    '../images/traditionalwear/tradition6.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'T06',
+                    'Temple Border Saree',
+                    1400,
+                    '../images/traditionalwear/tradition6.webp',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/traditionalwear/tradition7.jpg" alt="Product 7" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'T07',
+                  'Bandhani Lehenga',
+                  3220,
+                  '../images/traditionalwear/tradition7.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">8% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Bandhani Lehenga</h3>
+          <p class="product-desc">
+            Hand-dyed Bandhani lehenga with mirror work.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹3,220</span>
+            <span class="original-price">₹3,500</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'T07',
+                    'Bandhani Lehenga',
+                    3220,
+                    '../images/traditionalwear/tradition7.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'T07',
+                    'Bandhani Lehenga',
+                    3220,
+                    '../images/traditionalwear/tradition7.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/traditionalwear/tradition8.jpg" alt="Product 8" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'T08',
+                  'Chikankari Suit',
+                  2100,
+                  '../images/traditionalwear/tradition8.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">8% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Chikankari Suit</h3>
+          <p class="product-desc">
+            Traditional Lucknawi work on georgette fabric.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹2,100</span>
+            <span class="original-price">₹2,800</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'T08',
+                    'Chikankari Suit',
+                    2100,
+                    '../images/traditionalwear/tradition8.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'T08',
+                    'Chikankari Suit',
+                    2100,
+                    '../images/traditionalwear/tradition8.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/traditionalwear/tradition9.jpg" alt="Product 9" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'T09',
+                  'Mysore Silk Set',
+                  4500,
+                  '../images/traditionalwear/tradition9.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">10% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Mysore Silk Set</h3>
+          <p class="product-desc">
+            Classic Mysore silk pavadai with gold jari.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹4,500</span>
+            <span class="original-price">₹5,000</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'T09',
+                    'Mysore Silk Set',
+                    4500,
+                    '../images/traditionalwear/tradition9.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'T09',
+                    'Mysore Silk Set',
+                    4500,
+                    '../images/traditionalwear/tradition9.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/traditionalwear/tradition10.png" alt="Product 10" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'T10',
+                  'Kalamkari Lehenga',
+                  3825,
+                  '../images/traditionalwear/tradition10.png',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">15% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Kalamkari Lehenga</h3>
+          <p class="product-desc">
+            Hand-painted Kalamkari design on silk fabric.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹3,825</span>
+            <span class="original-price">₹4,500</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'T10',
+                    'Kalamkari Lehenga',
+                    3825,
+                    '../images/traditionalwear/tradition10.png',
+                  )
+                ">
+              Add to Cart
+              <button class="buy-now-btn" onclick="
+                  buyNow(
+                      'T10',
+                    'Kalamkari Lehenga',
+                    3825,
+                    '../images/traditionalwear/tradition10.png',
+                  )
+                ">
+                Buy Now
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer-section">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h2>KAARIGAI</h2>
+        <p>&copy; 2026 Crafted with Love by Artisans.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="../js/loader.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/whishlist.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/buynow.js"></script>
+</body>
+
+</html>

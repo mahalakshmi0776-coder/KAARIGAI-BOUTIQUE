@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Office Wear | KAARIGAI</title>
+  <!--stylesheets-->
+  <link rel="stylesheet" href="../css/loader.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/product.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/toast.css" />
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+<body>
+  <!--preloader-->
+  <div id="preloader">
+    <div class="loader-content">
+      <h1 class="loader-logo">KAARIGAI</h1>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+  <!--navbar-->
+  <nav>
+    <div class="nav-container">
+      <div class="navlogo">
+        <h1><a href="../index.html" class="logo">KAARIGAI</a></h1>
+      </div>
+      <div class="navitem" id="navMenu">
+        <ul class="navlinks">
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#collections">Collections</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="../subpages/orders.html">Orders</a></li>
+        </ul>
+      </div>
+      <div class="navlinksicon">
+        <a href="#" id="loginBtn"><i class="fa-solid fa-circle-user"></i></a>
+        <a href="../subpages/whishlist.html"><i class="fa-solid fa-heart"></i></a>
+        <div class="cart-icon-wrapper" id="cartToggle">
+          <a href="../subpages/cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <span id="cart-count">0</span>
+        </div>
+        <i class="fas fa-bars bar-icon" id="menuBtn"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section class="product-display">
+    <h2 class="section-title">Office Wear Collection</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/officewear/officewear1.jpg" alt="Office Wear 1" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'O01',
+                  'Cotton Formal Kurti',
+                  1050,
+                  '../images/officewear/officewear1.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">10% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Cotton Formal Kurti</h3>
+          <p class="product-desc">
+            Smart cotton kurti with mandarin collar for office.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹1,050</span>
+            <span class="original-price">₹1,167</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'O01',
+                    'Cotton Formal Kurti',
+                    1050,
+                    '../images/officewear/officewear1.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow( 'O01',
+                    'Cotton Formal Kurti',
+                    1050,
+                    '../images/officewear/officewear1.jpg',
+                      
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/officewear/officewear2.jpg" alt="Office Wear 2" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'O02',
+                  'Linen Blend Tunic',
+                  1200,
+                  '../images/officewear/officewear2.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">15% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Linen Blend Tunic</h3>
+          <p class="product-desc">
+            Breathable linen tunic in solid pastel shades.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹1,200</span>
+            <span class="original-price">₹1,412</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'O02',
+                    'Linen Blend Tunic',
+                    1200,
+                    '../images/officewear/officewear2.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'O02',
+                    'Linen Blend Tunic',
+                    1200,
+                    '../images/officewear/officewear2.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/officewear/officewear3.jpeg" alt="Office Wear 3" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'O03',
+                  'Ikat Print Kurti',
+                  950,
+                  '../images/officewear/officewear3.jpeg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">5% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Ikat Print Kurti</h3>
+          <p class="product-desc">
+            Traditional ikat patterns for a professional look.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹950</span>
+            <span class="original-price">₹1,000</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'O03',
+                    'Ikat Print Kurti',
+                    950,
+                    '../images/officewear/officewear3.jpeg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'O03',
+                    'Ikat Print Kurti',
+                    950,
+                    '../images/officewear/officewear3.jpeg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/officewear/officewear4.jpg" alt="Office Wear 4" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'O04',
+                  'Rayon Straight Kurta',
+                  1100,
+                  '../images/officewear/officewear4.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">20% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Rayon Straight Kurta</h3>
+          <p class="product-desc">
+            Soft rayon kurta with minimal embroidery.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹1,100</span>
+            <span class="original-price">₹1,375</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'O04',
+                    'Rayon Straight Kurta',
+                    1100,
+                    '../images/officewear/officewear4.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'O04',
+                    'Rayon Straight Kurta',
+                    1100,
+                    '../images/officewear/officewear4.jpg',
+                      
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/officewear/officewear5.webp" alt="Office Wear 5" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'O05',
+                  'Formal Shirt Kurti',
+                  1350,
+                  '../images/officewear/officewear5.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">15% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Formal Shirt Kurti</h3>
+          <p class="product-desc">
+            Shirt style kurti with button-down front.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹1,350</span>
+            <span class="original-price">₹1,588</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'O05',
+                    'Formal Shirt Kurti',
+                    1350,
+                    '../images/officewear/officewear5.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'O05',
+                    'Formal Shirt Kurti',
+                    1350,
+                    '../images/officewear/officewear5.webp',
+                      
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/officewear/officewear6.webp" alt="Office Wear 6" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'O06',
+                  'Indigo Print Kurti',
+                  880,
+                  '../images/officewear/officewear6.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">12% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Indigo Print Kurti</h3>
+          <p class="product-desc">
+            Natural indigo dyed kurti with geometric prints.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹880</span>
+            <span class="original-price">₹1,000</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'O06',
+                    'Indigo Print Kurti',
+                    880,
+                    '../images/officewear/officewear6.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'O06',
+                    'Indigo Print Kurti',
+                    880,
+                    '../images/officewear/officewear6.webp',
+                      
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/officewear/officewear7.webp" alt="Office Wear 7" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'O07',
+                  'Khadi Cotton Kurta',
+                  1450,
+                  '../images/officewear/officewear7.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">8% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Khadi Cotton Kurta</h3>
+          <p class="product-desc">
+            Hand-spun khadi cotton kurta for all-day comfort.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹1,450</span>
+            <span class="original-price">₹1,576</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'O07',
+                    'Khadi Cotton Kurta',
+                    1450,
+                    '../images/officewear/officewear7.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'O07',
+                    'Khadi Cotton Kurta',
+                    1450,
+                    '../images/officewear/officewear7.webp',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/officewear/officewear8.jpg" alt="Office Wear 8" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'O08',
+                  'Striped Office Kurti',
+                  999,
+                  '../images/officewear/officewear8.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">8% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Striped Office Kurti</h3>
+          <p class="product-desc">
+            Vertical stripes design for a slim and professional look.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹999</span>
+            <span class="original-price">₹1,200</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'O08',
+                    'Striped Office Kurti',
+                    999,
+                    '../images/officewear/officewear8.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'O08',
+                    'Striped Office Kurti',
+                    999,
+                    '../images/officewear/officewear8.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/officewear/officewear9.jpg" alt="Office Wear 9" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'O09',
+                  'Pastel Work Kurta',
+                  1250,
+                  '../images/officewear/officewear9.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">10% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Pastel Work Kurta</h3>
+          <p class="product-desc">
+            Elegant pastel kurta with subtle thread work.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹1,250</span>
+            <span class="original-price">₹1,389</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'O09',
+                    'Pastel Work Kurta',
+                    1250,
+                    '../images/officewear/officewear9.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'O09',
+                    'Pastel Work Kurta',
+                    1250,
+                    '../images/officewear/officewear9.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/officewear/officewear10.jpg" alt="Office Wear 10" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'O10',
+                  'Slub Cotton Tunic',
+                  1020,
+                  '../images/officewear/officewear10.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">15% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Slub Cotton Tunic</h3>
+          <p class="product-desc">
+            Textured slub cotton tunic for a smart-casual office look.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹1,020</span>
+            <span class="original-price">₹1,200</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'O10',
+                    'Slub Cotton Tunic',
+                    1020,
+                    '../images/officewear/officewear10.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'O10',
+                    'Slub Cotton Tunic',
+                    1020,
+                    '../images/officewear/officewear10.jpg', 
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer-section">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h2>KAARIGAI</h2>
+        <p>&copy; 2026 Crafted with Love by Artisans.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container" class="toast-container"></div>
+
+
+  <script src="../js/loader.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/whishlist.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/buynow.js"></script>
+</body>
+
+</html>

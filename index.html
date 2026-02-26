@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KAARIGAI | Boutique</title>
+  <!--stylesheet-->
+  <link rel="stylesheet" href="css/loader.css" />   
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/carousel.css" />
+  <link rel="stylesheet" href="css/collection.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/contactfooter.css" />
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!--preloader-->
+  <div id="preloader">
+    <div class="loader-content">
+      <h1 class="loader-logo">KAARIGAI</h1>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+
+  <!--navbar container-->
+  <nav>
+    <div class="nav-container">
+      <div class="navlogo">
+        <h1><a href="#" class="logo">KAARIGAI</a></h1>
+      </div>
+      <div class="navitem" id="navMenu">
+        <ul class="navlinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="subpages/orders.html">Orders</a></li>
+        </ul>
+      </div>
+      <div class="navlinksicon">
+        <a href="subpages/search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#" id="loginBtn"><i class="fa-solid fa-circle-user"></i></a>
+        <a href="subpages/whishlist.html"><i class="fa-solid fa-heart"></i></a>
+        <div class="cart-icon-wrapper" id="cartToggle">
+          <a href="subpages/cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <span id="cart-count">0</span>
+        </div>
+        <i class="fas fa-bars bar-icon" id="menuBtn"></i>
+      </div>
+    </div>
+  </nav>
+  <!--slider-section-->
+  <section class="carousel-container" id="home">
+    <div class="carousel-slide">
+      <div class="slide active">
+        <img src="images/slider1.webp" alt="Boutique Collection 1" />
+        <div class="slide-content">
+          <h2>Handcrafted sarees</h2>
+          <p>Explore our new arrivals</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/slider2.webp" alt="Boutique Collection 2" />
+        <div class="slide-content">
+          <h2>Traditional Grace</h2>
+          <p>Handcrafted with love</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/slider3.png" alt="Boutique Collection 3" />
+        <div class="slide-content">
+          <h2>ethenic set</h2>
+          <p>Be Elegant with our Collections</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/slider4.webp" alt="Boutique Collection 3" />
+        <div class="slide-content">
+          <h2>Festival Wear</h2>
+          <p>Celebrations With Our Festive Wear</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/slider5.webp" alt="Boutique Collection 5" />
+        <div class="slide-content">
+          <h2>Everyday Collection</h2>
+          <p>Office Wear</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+  </section>
+  <!--collections-->
+  <section class="collections" id="collections">
+    <h2 class="section-title">Our Collections</h2>
+    <div class="collections-grid">
+      <div class="collection-card">
+        <div class="card-img">
+          <img src="images/collections1.webp" alt="Saree Collection" />
+        </div>
+        <div class="card-info">
+          <h3>Saree</h3>
+          <a href="productpage/saree.html" class="shop-btn">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="collection-card">
+        <div class="card-img">
+          <img src="images/collections2.webp" alt="Kurti Collection" />
+        </div>
+        <div class="card-info">
+          <h3>Kurti</h3>
+          <a href="productpage/kurti.html" class="shop-btn">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="collection-card">
+        <div class="card-img">
+          <img src="images/collections3.webp" alt="Ethnic Set Collection" />
+        </div>
+        <div class="card-info">
+          <h3>Ethnic Set</h3>
+          <a href="productpage/ethnic-set.html" class="shop-btn">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="collection-card">
+        <div class="card-img">
+          <img src="images/collections4.webp" alt="Traditional Wear" />
+        </div>
+        <div class="card-info">
+          <h3>Traditional Wear</h3>
+          <a href="productpage/traditional-wear.html" class="shop-btn">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="collection-card">
+        <div class="card-img">
+          <img src="images/collections5.webp" alt="Office Wear" />
+        </div>
+        <div class="card-info">
+          <h3>Office Wear</h3>
+          <a href="productpage/office-wear.html" class="shop-btn">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--about-->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="images/about.png" alt="About KAARIGAI" />
+      </div>
+
+      <div class="about-content">
+        <h1>About KAARIGAI</h1>
+        <p>
+          KAARIGAI is a platform dedicated to showcasing and selling
+          handcrafted products made by skilled artisans. Our mission is to
+          support local craftsmanship and provide customers with unique,
+          high-quality items that tell a story.
+        </p>
+        <p>
+          We believe in the value of handmade goods and the importance of
+          preserving traditional techniques. By purchasing from KAARIGAI, you
+          are not only acquiring a beautiful product but also supporting the
+          livelihoods of talented artisans around the world.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--contact-->
+  <footer id="contact" class="footer-section">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h2>Contact KAARIGAI</h2>
+        <p>
+          Have questions about our artisans or your order? We'd love to hear
+          from you.
+        </p>
+
+        <ul class="contact-details">
+          <li><strong>Email:</strong> hello@kaarigai.com</li>
+          <li><strong>Phone:</strong> +91 98765 43210</li>
+          <li><strong>Location:</strong> Chennai, Tamil Nadu, India</li>
+        </ul>
+      </div>
+
+      <div class="footer-form">
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 KAARIGAI. Crafted with Love by Artisans.</p>
+    </div>
+  </footer>
+  <script src="js/loader.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+
+</html>

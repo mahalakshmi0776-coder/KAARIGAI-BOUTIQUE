@@ -1,0 +1,15 @@
+.footer-section {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 50px 20px 20px 20px;
+}
+
+.footer-info {
+  text-align: center;
+  width: 100%;
+}
+
+/* Ensure footer doesn't shrink */
+footer {
+  margin-top: auto; /* Back-up for pushing footer */
+}

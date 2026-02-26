@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Products | KAARIGAI</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="navlogo">
+                <h1><a href="../index.html" class="logo">KAARIGAI</a></h1>
+            </div>
+            <div class="navlinksicon">
+                <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for sarees, kurtis, or ethnic wear..."
+                autocomplete="off">
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="results-info">
+            <p id="resultCount">Enter a keyword to start searching</p>
+        </div>
+
+        <div class="products-grid" id="searchResults">
+        </div>
+    </section>
+
+    <script src="../js/search.js"></script>
+</body>
+
+</html>

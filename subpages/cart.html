@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart | KAARIGAI</title>
+  <!--stylesheet-->
+  <link rel="stylesheet" href="../css/loader.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/cart.css" />
+  <link rel="stylesheet" href="../css/toast.css">
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!--preloader-->
+  <div id="preloader">
+    <div class="loader-content">
+      <h1 class="loader-logo">KAARIGAI</h1>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+  <!--navbar-->
+  <nav>
+    <div class="nav-container">
+      <div class="navlogo">
+        <h1><a href="../index.html" class="logo">KAARIGAI</a></h1>
+      </div>
+      <div class="navlinksicon">
+        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="whishlist.html"><i class="fa-solid fa-heart"></i></a>
+        <div class="cart-icon-wrapper">
+          <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <span id="cart-count">0</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="cart-wrapper">
+    <h2 class="section-title">Your Shopping Bag</h2>
+
+    <div class="cart-container">
+      <div id="cart-items-container" class="cart-items"></div>
+
+      <div class="cart-summary" id="cart-summary">
+        <h3>Order Summary</h3>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="subtotal">₹0</span>
+        </div>
+        <div class="summary-row">
+          <span>Shipping</span>
+          <span class="free">Free</span>
+        </div>
+        <hr />
+        <div class="summary-row total">
+          <span>Total</span>
+          <span id="total-amount">₹0</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </main>
+
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="../js/loader.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/cart.js"></script>
+</body>
+
+</html>

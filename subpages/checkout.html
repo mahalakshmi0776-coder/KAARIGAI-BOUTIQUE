@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | KAARIGAI</title>
+  <!--stylesheet-->
+  <link rel="stylesheet" href="../css/loader.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/checkout.css" />
+  <link rel="stylesheet" href="../css/toast.css" />
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+
+<body>
+  <!--preloader-->
+  <div id="preloader">
+    <div class="loader-content">
+      <h1 class="loader-logo">KAARIGAI</h1>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+  <!--navbar-->
+  <nav>
+    <div class="nav-container">
+      <div class="navlogo">
+        <h1><a href="../index.html#home" class="logo">KAARIGAI</a></h1>
+      </div>
+      <div class="navlinksicon">
+        <a href="../index.html#home"><i class="fa-solid fa-house"></i></a>
+        <div class="cart-icon-wrapper">
+          <a href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <span id="cart-count">0</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="checkout-container">
+    <h2 class="section-title">Finalize Your Order</h2>
+
+    <div class="checkout-layout">
+      <section class="checkout-form">
+        <form id="paymentForm">
+          <div class="form-group">
+            <h3><i class="fas fa-truck"></i> Shipping Address</h3>
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="text" placeholder="Street Address" required />
+            <div class="flex-inputs">
+              <input type="text" placeholder="City" required />
+              <input type="text" placeholder="Pincode" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <h3><i class="fas fa-credit-card"></i> Payment Method</h3>
+            <div class="payment-options">
+              <label class="pay-option">
+                <input type="radio" name="pay" value="card" checked />
+                <span><i class="fab fa-cc-visa"></i> Card</span>
+              </label>
+              <label class="pay-option">
+                <input type="radio" name="pay" value="gpay" />
+                <span><i class="fab fa-google-pay"></i> GPay</span>
+              </label>
+              <label class="pay-option">
+                <input type="radio" name="pay" value="cod" />
+                <span><i class="fas fa-money-bill-wave"></i> COD</span>
+              </label>
+            </div>
+
+            <div id="cardDetails" class="payment-section">
+              <input type="text" placeholder="Card Number (16 digits)" maxlength="16" />
+              <div class="flex-inputs">
+                <input type="text" placeholder="MM/YY" maxlength="5" />
+                <input type="password" placeholder="CVV" maxlength="3" />
+              </div>
+            </div>
+
+            <div id="gpaySection" class="payment-section hidden">
+              <div class="gpay-placeholder-btn">
+                <i class="fab fa-google-pay"></i> Pay with Google Pay
+              </div>
+              <p class="helper-text">You will be redirected to Google Pay app.</p>
+            </div>
+
+            <div id="codSection" class="payment-section hidden">
+              <p class="helper-text">Pay with cash upon delivery of your items.</p>
+            </div>
+          </div>
+
+          <button type="submit" class="place-order-btn" id="submitBtn">
+            Place Order - ₹<span id="finalAmount">0</span>
+          </button>
+        </form>
+      </section>
+
+      <aside class="order-summary">
+        <h3>Order Summary</h3>
+        <div id="summaryItems" class="summary-items">
+        </div>
+        <div class="summary-totals">
+          <div class="summary-line">
+            <span>Subtotal</span>
+            <span>₹<span id="subtotal">0</span></span>
+          </div>
+          <div class="summary-line">
+            <span>Shipping</span>
+            <span class="free-text">FREE</span>
+          </div>
+          <hr />
+          <div class="summary-line total-highlight">
+            <span>Total</span>
+            <span>₹<span id="totalFinal">0</span></span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <div id="toast-container" class="toast-container"></div>
+
+
+
+  <script src="../js/loader.js"></script>
+  <script src="../js/checkout.js"></script>
+  <script src="../js/toast.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kurti Collections | KAARIGAI</title>
+  <!--stylesheets-->
+  <link rel="stylesheet" href="../css/loader.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/product.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/toast.css" />
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!--preloader-->
+  <div id="preloader">
+    <div class="loader-content">
+      <h1 class="loader-logo">KAARIGAI</h1>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+  <!--navbar-->
+  <nav>
+    <div class="nav-container">
+      <div class="navlogo">
+        <h1><a href="../index.html" class="logo">KAARIGAI</a></h1>
+      </div>
+      <div class="navitem" id="navMenu">
+        <ul class="navlinks">
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#collections">Collections</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="../subpages/orders.html">Orders</a></li>
+        </ul>
+      </div>
+      <div class="navlinksicon">
+        <a href="#" id="loginBtn"><i class="fa-solid fa-circle-user"></i></a>
+        <a href="../subpages/whishlist.html"><i class="fa-solid fa-heart"></i></a>
+        <div class="cart-icon-wrapper" id="cartToggle">
+          <a href="../subpages/cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <span id="cart-count">0</span>
+        </div>
+        <i class="fas fa-bars bar-icon" id="menuBtn"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section class="product-display">
+    <h2 class="section-title">Kurti Collections</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/kurti/kurti1.jpg" alt="Cotton Straight Kurti" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'K01',
+                  'Cotton Straight Kurti',
+                  810,
+                  '../images/kurti/kurti1.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">10% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Cotton Straight Kurti</h3>
+          <p class="product-desc">
+            Perfect office wear with comfortable cotton fabric.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹810</span>
+            <span class="original-price">₹900</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'K01',
+                    'Cotton Straight Kurti',
+                    810,
+                    '../images/kurti/kurti1.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'K01',
+                    'Cotton Straight Kurti',
+                    810,
+                    '../images/kurti/kurti1.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/kurti/kurti2.jpg" alt="Cotton Straight Kurti" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'K02',
+                  'Cotton Straight Kurti',
+                  810,
+                  '../images/kurti/kurti2.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">10% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Cotton Straight Kurti</h3>
+          <p class="product-desc">
+            Perfect office wear with comfortable cotton fabric.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹810</span>
+            <span class="original-price">₹900</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'K02',
+                    'Cotton Straight Kurti',
+                    810,
+                    '../images/kurti/kurti2.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'K02',
+                    'Cotton Straight Kurti',
+                    810,
+                    '../images/kurti/kurti2.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/kurti/kurti3.jpg" alt="Lucknowi Chikankari" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'K03',
+                  'Lucknowi Chikankari',
+                  1530,
+                  '../images/kurti/kurti3.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">15% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Lucknowi Chikankari</h3>
+          <p class="product-desc">
+            Hand-embroidered georgette kurti for events.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹1,530</span>
+            <span class="original-price">₹1,800</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'K03',
+                    'Lucknowi Chikankari',
+                    1530,
+                    '../images/kurti/kurti3.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'K03',
+                    'Lucknowi Chikankari',
+                    1530,
+                    '../images/kurti/kurti3.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/kurti/kurti4.jpg" alt="Short Denim Kurti" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'K04',
+                  'Short Denim Kurti',
+                  949,
+                  '../images/kurti/kurti4.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">5% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Short Denim Kurti</h3>
+          <p class="product-desc">Trendy short kurti to pair with jeans.</p>
+          <div class="price-container">
+            <span class="current-price">₹949</span>
+            <span class="original-price">₹999</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'K04',
+                    'Short Denim Kurti',
+                    949,
+                    '../images/kurti/kurti4.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'K04',
+                    'Short Denim Kurti',
+                    949,
+                    '../images/kurti/kurti4.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/kurti/kurti5.webp" alt="A-Line Rayon Kurti" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'K05',
+                  'A-Line Rayon Kurti',
+                  968,
+                  '../images/kurti/kurti5.webp',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">12% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">A-Line Rayon Kurti</h3>
+          <p class="product-desc">
+            Modern side-pocket design with rayon fabric.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹968</span>
+            <span class="original-price">₹1,100</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'K05',
+                    'A-Line Rayon Kurti',
+                    968,
+                    '../images/kurti/kurti5.webp',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'K05',
+                    'A-Line Rayon Kurti',
+                    968,
+                    '../images/kurti/kurti5.webp',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/kurti/kurti6.jpg" alt="Party Wear Silk Kurti" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'K06',
+                  'Party Wear Silk Kurti',
+                  1650,
+                  '../images/kurti/kurti6.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">25% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Party Wear Silk Kurti</h3>
+          <p class="product-desc">Rich silk blend with gold foil prints.</p>
+          <div class="price-container">
+            <span class="current-price">₹1,650</span>
+            <span class="original-price">₹2,200</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'K06',
+                    'Party Wear Silk Kurti',
+                    1650,
+                    '../images/kurti/kurti6.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'K06',
+                    'Party Wear Silk Kurti',
+                    1650,
+                    '../images/kurti/kurti6.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/kurti/kurti7.jpg" alt="Indo-Western Kurti" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'K07',
+                  'Indo-Western Kurti',
+                  1215,
+                  '../images/kurti/kurti7.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">10% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Indo-Western Kurti</h3>
+          <p class="product-desc">
+            Stylish asymmetrical cut for modern look.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹1,215</span>
+            <span class="original-price">₹1,350</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'K07',
+                    'Indo-Western Kurti',
+                    1215,
+                    '../images/kurti/kurti7.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'K07',
+                    'Indo-Western Kurti',
+                    1215,
+                    '../images/kurti/kurti7.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/kurti/kurti8.jpg" alt="Kaftan Style Kurti" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'K08',
+                  'Kaftan Style Kurti',
+                  850,
+                  '../images/kurti/kurti8.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">15% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Kaftan Style Kurti</h3>
+          <p class="product-desc">Loose-fit comfortable summer kaftan.</p>
+          <div class="price-container">
+            <span class="current-price">₹850</span>
+            <span class="original-price">₹1,000</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'K08',
+                    'Kaftan Style Kurti',
+                    850,
+                    '../images/kurti/kurti8.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'K08',
+                    'Kaftan Style Kurti',
+                    850,
+                    '../images/kurti/kurti8.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/kurti/kurti9.jpg" alt="Jaipuri Block Print" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'K09',
+                  'Jaipuri Block Print',
+                  760,
+                  '../images/kurti/kurti9.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">20% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Jaipuri Block Print</h3>
+          <p class="product-desc">
+            Traditional Rajasthani block printed kurti.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹760</span>
+            <span class="original-price">₹950</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'K09',
+                    'Jaipuri Block Print',
+                    760,
+                    '../images/kurti/kurti9.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'K09',
+                    'Jaipuri Block Print',
+                    760,
+                    '../images/kurti/kurti9.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-container">
+          <img src="../images/kurti/kurti10.jpg" alt="Mirror Work Kurti" />
+          <button class="wishlist-btn" onclick="
+                addToWishlist(
+                  'K10',
+                  'Mirror Work Kurti',
+                  1710,
+                  '../images/kurti/kurti10.jpg',
+                  this,
+                )
+              ">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+          <span class="discount-badge">10% OFF</span>
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Mirror Work Kurti</h3>
+          <p class="product-desc">
+            Festive wear with heavy mirror embroidery.
+          </p>
+          <div class="price-container">
+            <span class="current-price">₹1,710</span>
+            <span class="original-price">₹1,900</span>
+          </div>
+          <div class="button-group">
+            <button class="add-to-cart-btn" onclick="
+                  addToCart(
+                    'K10',
+                    'Mirror Work Kurti',
+                    1710,
+                    '../images/kurti/kurti10.jpg',
+                  )
+                ">
+              Add to Cart
+            </button>
+            <button class="buy-now-btn" onclick="
+                  buyNow(
+                    'K10',
+                    'Mirror Work Kurti',
+                    1710,
+                    '../images/kurti/kurti10.jpg',
+                  )
+                ">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer-section">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h2>KAARIGAI</h2>
+        <p>&copy; 2026 Crafted with Love by Artisans.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="../js/loader.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/toast.js"></script>
+  <script src="../js/whishlist.js"></script>
+  <script src="../js/buynow.js"></script>
+</body>
+
+</html>
