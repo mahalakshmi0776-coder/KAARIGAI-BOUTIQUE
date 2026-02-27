@@ -1,4 +1,5 @@
 /* --- Collections Section --- */
+
 .collections {
   padding: 60px 5%;
   background: #f9f9f9;
@@ -11,10 +12,7 @@
   color: var(--dark);
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
+
 
 
 .collections-grid {
@@ -62,43 +60,55 @@
   transition: 0.3s;
 }
 
+/* --- Responsive Grid for All Device Widths --- */
 
-/* Large Screens Grid Fix */
+/* 1. Large Desktops (Fixed 5 Columns) */
 @media (min-width: 1200px) {
   .collections-grid {
     grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
   }
 }
 
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
-  }
-}
-
-
-/* --- Mobile Width Alignment Fix --- */
-@media (max-width: 576px) {
-  .collections {
-    padding: 40px 15px; /* Reduces side spacing for more card room */
-  }
-
+/* 2. Tablets & Small Laptops (Fluid 2 to 3 Columns) */
+@media (max-width: 1199px) and (min-width: 769px) {
   .collections-grid {
-    grid-template-columns: 1fr; /* Forces cards to stack 1 per row */
-    gap: 20px; /* Tighter spacing for smaller screens */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+}
+
+/* 3. Mobile Landscape & Large Phones (2 Columns) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .collections-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
   .card-img {
-    height: 250px; /* Slightly shorter image to fit mobile viewports better */
+    height: 200px; 
   }
 
-  .collection-card {
-    max-width: 100%; /* Ensures card takes full available width */
-    margin: 0 auto;  /* Centers the card if there is any extra space */
-  }
 }
 
+/* 4. Small Mobile Phones (1 Column) */
+@media (max-width: 480px) {
+  .collections {
+    padding: 40px 15px;
+  }
 
+  .collections-grid {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
 
+  .card-img {
+    height: 250px;
+  }
 
+  .section-title {
+    font-size: 1.8rem;
+  }
 
+}
