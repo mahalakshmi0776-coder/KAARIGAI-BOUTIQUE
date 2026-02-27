@@ -62,6 +62,7 @@
   transition: 0.3s;
 }
 
+
 /* Large Screens Grid Fix */
 @media (min-width: 1200px) {
   .collections-grid {
@@ -74,3 +75,30 @@
     font-size: 2rem;
   }
 }
+
+
+/* --- Mobile Width Alignment Fix --- */
+@media (max-width: 576px) {
+  .collections {
+    padding: 40px 15px; /* Reduces side spacing for more card room */
+  }
+
+  .collections-grid {
+    grid-template-columns: 1fr; /* Forces cards to stack 1 per row */
+    gap: 20px; /* Tighter spacing for smaller screens */
+  }
+
+  .card-img {
+    height: 250px; /* Slightly shorter image to fit mobile viewports better */
+  }
+
+  .collection-card {
+    max-width: 100%; /* Ensures card takes full available width */
+    margin: 0 auto;  /* Centers the card if there is any extra space */
+  }
+}
+
+
+
+
+
