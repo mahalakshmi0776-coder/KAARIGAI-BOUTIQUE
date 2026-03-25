@@ -110,13 +110,12 @@
   position: sticky;
   top: 100px;
 }
-/* Modified Summary Styles - Removed Scrollbar */
+
 .summary-items {
-  /* Removed max-height and overflow-y */
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  gap: 5px; /* Adds consistent spacing between products */
+  gap: 5px; 
 }
 
 .summary-line {
