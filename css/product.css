@@ -8,7 +8,7 @@
 }
 
 .product-display {
-  padding: 100px 5% 50px; /* Top padding to clear fixed navbar */
+  padding: 100px 5% 50px;
   background: #fff;
   margin-top: 100px;
   padding: 20px 5%;
@@ -156,12 +156,12 @@
 }
 
 .wishlist-btn i {
-  color: #ccc; /* Default grey color */
+  color: #ccc;
   font-size: 18px;
 }
 
 .wishlist-btn.active i {
-  color: #ff3796; /* Heart color when clicked */
+  color: #ff3796;
 }
 
 /* Apply to the body to create a flex container */
@@ -170,58 +170,58 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  display: flex; /* Added */
-  flex-direction: column; /* Added */
-  min-height: 100vh; /* Makes body at least the height of the screen */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Push the footer down by making the main content area grow */
 .product-display {
-  flex: 1; /* Takes up all available vertical space */
+  flex: 1;
   padding: 100px 5% 50px;
   background: #fff;
-  margin-top: 60px; /* Adjusted to prevent double margin */
+  margin-top: 60px;
 }
 
 .product-grid {
   display: grid;
-  /* Forces 4 equal columns even if only 1 item exists */
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  align-items: start; /* Prevents cards from stretching vertically */
+  align-items: start;
 }
 
 /* Maintain responsiveness for smaller screens */
 @media (max-width: 1024px) {
   .product-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .product-grid {
-    grid-template-columns: 1fr; /* 1 column for small phones */
+    grid-template-columns: 1fr;
   }
 }
+
 /* Mobile Devices (Phones) */
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem;
   }
 }
+
 /* Tablet/Mobile Adjustments */
 @media (max-width: 480px) {
   .product-grid {
-    grid-template-columns: 1fr; /* Single column for small phones */
+    grid-template-columns: 1fr;
   }
 
   .product-img-container {
-    height: 400px; /* Taller images for mobile impact */
+    height: 400px;
   }
 }

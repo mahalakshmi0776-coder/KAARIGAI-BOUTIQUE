@@ -1,10 +1,11 @@
 .fa-heart {
   color: white;
 }
+
 .product-display {
   margin-top: 100px;
 }
 
 .wishlist-btn.active i {
-  color: #ff4d6d !important; /* Pink color */
+  color: #ff4d6d !important;
 }

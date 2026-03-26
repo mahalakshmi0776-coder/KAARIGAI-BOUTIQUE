@@ -11,5 +11,5 @@
 
 /* Ensure footer doesn't shrink */
 footer {
-  margin-top: auto; /* Back-up for pushing footer */
+  margin-top: auto;
 }

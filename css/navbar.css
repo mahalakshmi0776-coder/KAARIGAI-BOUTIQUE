@@ -30,6 +30,7 @@ nav .logo {
   color: white;
   text-decoration: none;
 }
+
 .navlinks li {
   font-size: 16px;
   font-weight: 600;
@@ -61,6 +62,7 @@ nav .logo {
   padding: 2px 6px;
   font-size: 12px;
 }
+
 .fa-bars {
   display: none !important;
   font-size: 24px;
@@ -115,14 +117,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px; /* Keeps content centered on ultra-wide screens */
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 /* --- Navigation Links for Large Screens --- */
 @media (min-width: 993px) {
   .bar-icon {
-    display: none !important; /* Hide hamburger on desktop */
+    display: none !important;
   }
 
   .navlinks {
@@ -136,10 +138,10 @@ nav {
 @media (max-width: 992px) {
   .navitem {
     position: fixed;
-    left: -100%; /* Hidden by default */
+    left: -100%;
     top: 60px;
     background: white;
-    width: 280px; /* Fixed width for better look on all mobile sizes */
+    width: 280px;
     height: 100vh;
     transition: 0.4s ease-in-out;
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
@@ -148,12 +150,12 @@ nav {
   }
 
   .navitem.active {
-    left: 0; /* Slides in */
+    left: 0;
   }
 
   .navlinks {
     flex-direction: column;
-    padding: 80px 30px; /* Space for top */
+    padding: 80px 30px;
     gap: 25px;
   }
 
@@ -183,10 +185,10 @@ nav {
   }
 
   .navlinksicon {
-    gap: 15px; /* Tighter spacing for small screens */
+    gap: 15px;
   }
 
   .navitem {
-    width: 80%; /* Takes more width on very small phones */
+    width: 80%;
   }
 }

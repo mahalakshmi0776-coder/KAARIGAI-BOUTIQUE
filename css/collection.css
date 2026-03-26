@@ -12,9 +12,6 @@
   color: var(--dark);
 }
 
-
-
-
 .collections-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -87,7 +84,7 @@
   }
 
   .card-img {
-    height: 200px; 
+    height: 200px;
   }
 
 }
@@ -99,7 +96,7 @@
   }
 
   .collections-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
