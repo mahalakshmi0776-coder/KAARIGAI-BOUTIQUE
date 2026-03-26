@@ -9,32 +9,30 @@ function updateCart() {
   }
 }
 
-/* --- ADDED CART LOGIC --- */
+// ADDED CART LOGIC 
 
-/**
- * Updates the Navbar Cart Counter
- * Now it only counts unique items (cart.length) instead of total quantity.
- */
+// Updates the Navbar Cart Counter
+
 function updateCartCountDisplay() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   const cartDisplay = document.getElementById("cart-count");
   if (cartDisplay) {
-    // Change: Using cart.length to count unique products only
-    cartDisplay.innerText = cart.length; 
+
+    cartDisplay.innerText = cart.length;
   }
 }
 
 // Global function to add to cart
+
 function addToCart(id, name, price, image) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   const existingItem = cart.find((item) => item.id === id);
 
   if (existingItem) {
-    // Logic: Item exists, so we don't add a new row. 
-    // The cart.length remains the same.
+
     showToast(name + " is already in your cart!", "fa-info-circle");
   } else {
-    // Logic: New item added. cart.length will increase by 1.
+
     cart.push({ id, name, price, image, quantity: 1 });
     localStorage.setItem("cart", JSON.stringify(cart));
     updateCartCountDisplay();
@@ -43,6 +41,7 @@ function addToCart(id, name, price, image) {
 }
 
 // Ensure the count stays correct on page load
+
 window.addEventListener("DOMContentLoaded", () => {
   updateCartCountDisplay();
 });
@@ -101,7 +100,7 @@ function changeQty(id, delta) {
   }
   localStorage.setItem("cart", JSON.stringify(cart));
   displayCart();
-  updateCartCountDisplay(); // from script.js
+  updateCartCountDisplay();
 }
 
 function removeItem(id) {
@@ -109,28 +108,26 @@ function removeItem(id) {
   cart = cart.filter((i) => i.id !== id);
   localStorage.setItem("cart", JSON.stringify(cart));
   displayCart();
-  updateCartCountDisplay(); // from script.js
+  updateCartCountDisplay();
 }
 
 document.addEventListener("DOMContentLoaded", displayCart);
 
 
 
+// Handle Proceed to Checkout Button Click
 
-/**
- * Handle Proceed to Checkout Button Click
- */
 document.querySelector(".checkout-btn").addEventListener("click", () => {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   if (cart.length === 0) {
-    // If cart is empty, show a message and don't go to checkout
+
     showToast("Your cart is empty! Add some items first.", "fa-info-circle");
   } else {
-    // 1. Clear any 'Buy Now' temporary data to ensure full cart is shown
+
     localStorage.removeItem("buyNowItem");
-    
-    // 2. Redirect to checkout page
+
+
     window.location.href = "checkout.html";
   }
 });

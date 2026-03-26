@@ -1,15 +1,15 @@
-/**
- * Main Initialization on Page Load
- */
+
+// Main Initialization on Page Load
+
 document.addEventListener("DOMContentLoaded", () => {
   updateCheckoutSummary();
   updateCartCount();
   setupPaymentToggle();
 });
 
-/**
- * Updates the Navbar Cart Counter
- */
+
+// Updates the Navbar Cart Counter
+
 function updateCartCount() {
   const countEl = document.getElementById("cart-count");
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -18,16 +18,16 @@ function updateCartCount() {
   }
 }
 
-/**
- * Fetches the correct items (Buy Now or Cart) and updates Summary UI
- */
+
+// Fetches the correct items (Buy Now or Cart) and updates Summary UI
+
 function updateCheckoutSummary() {
   const summaryContainer = document.getElementById("summaryItems");
   const subtotalEl = document.getElementById("subtotal");
   const totalFinalEl = document.getElementById("totalFinal");
   const finalAmountEl = document.getElementById("finalAmount");
 
-  // Buy Now item irukkanu check pannum
+
   const buyNowItem = JSON.parse(localStorage.getItem("buyNowItem"));
   let displayItems = buyNowItem ? [buyNowItem] : (JSON.parse(localStorage.getItem("cart")) || []);
 
@@ -37,6 +37,7 @@ function updateCheckoutSummary() {
   }
 
   // Mapping items to Summary HTML with Image
+
   summaryContainer.innerHTML = displayItems.map(item => `
         <div class="summary-line item-row">
             <div class="item-info">
@@ -57,9 +58,9 @@ function updateCheckoutSummary() {
   finalAmountEl.innerText = total;
 }
 
-/**
- * Payment Toggle Logic
- */
+
+// Payment Toggle Logic
+
 function setupPaymentToggle() {
   const cardSection = document.getElementById("cardDetails");
   const gpaySection = document.getElementById("gpaySection");
@@ -79,10 +80,10 @@ function setupPaymentToggle() {
   });
 }
 
-/**
- * Handle Order Submission and Show Toast
- */
-document.getElementById("paymentForm").onsubmit = function(e) {
+
+// Handle Order Submission and Show Toast
+
+document.getElementById("paymentForm").onsubmit = function (e) {
   e.preventDefault();
   const submitBtn = document.getElementById("submitBtn");
 
@@ -98,6 +99,7 @@ document.getElementById("paymentForm").onsubmit = function(e) {
   submitBtn.disabled = true;
 
   // Order Details Storage Logic
+
   const total = orderItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
   const newOrder = {
     orderId: "ORD-" + Math.floor(100000 + Math.random() * 900000),
@@ -111,6 +113,7 @@ document.getElementById("paymentForm").onsubmit = function(e) {
   localStorage.setItem("orders", JSON.stringify(orders));
 
   // Success Toast & Redirect
+
   setTimeout(() => {
     showToast("Order Placed Successfully!", "fa-check-circle");
 

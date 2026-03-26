@@ -1,8 +1,8 @@
-/* --- WISHLIST LOGIC (PERSISTENT) --- */
+// WISHLIST LOGIC (PERSISTENT) 
 
-/**
- * Toggles a product in the wishlist.
- */
+
+// Toggles a product in the wishlist.
+
 function addToWishlist(id, name, price, image, buttonElement) {
   let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
   const index = wishlist.findIndex((item) => item.id === id);
@@ -26,9 +26,9 @@ function addToWishlist(id, name, price, image, buttonElement) {
   }
 }
 
-/**
- * Displays items on the wishlist page
- */
+
+// Displays items on the wishlist page
+
 function displayWishlist() {
   const wishlistContainer = document.getElementById("wishlist-container");
   if (!wishlistContainer) return;
@@ -76,10 +76,10 @@ document.addEventListener("DOMContentLoaded", () => {
   displayWishlist();
 });
 
-/**
- * Synchronizes the UI heart icons with the saved wishlist state
- * Run this on product listing pages
- */
+
+// Synchronizes the UI heart icons with the saved wishlist state
+// Run this on product listing pages
+
 function syncWishlistUI() {
   const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
   const wishlistButtons = document.querySelectorAll(".wishlist-btn");
@@ -107,6 +107,6 @@ function syncWishlistUI() {
 
 // Ensure this runs on every page load
 document.addEventListener("DOMContentLoaded", () => {
-  displayWishlist(); // Existing call for the wishlist page
-  syncWishlistUI(); // New call for product/home pages
+  displayWishlist();
+  syncWishlistUI();
 });
